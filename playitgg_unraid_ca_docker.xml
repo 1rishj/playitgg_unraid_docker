@@ -30,7 +30,7 @@ All credits go to the playit.gg team.</Overview>
   <DonateText/>
   <DonateLink/>
   <Requires>Account/registration on playit.gg req.</Requires>
-  <Config Name="Secret Path" Target="/secret" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Secret Path" Target="/secret" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>
   <Config Name="SECRET_KEY" Target="SECRET_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"/>
   <TailscaleStateDir/>
 </Container>
