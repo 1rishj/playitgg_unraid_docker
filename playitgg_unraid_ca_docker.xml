@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>playit.gg</Name>
+  <Repository>ghcr.io/playit-cloud/playit-agent:latest</Repository>
+  <Registry/>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/playit-cloud/playit-agent</Project>
+  <ReadMe/>
+  <Overview>Official Docker from ghcr.io/playit-cloud/playit-agent&#13;
+&#13;
+Used to map services, e.g. game server or websites behind cgnat or other restricted networks.&#13;
+&#13;
+Just put in the secret key generated on playit.gg/account/agents/new-docker into the SECRET_KEY and you are good to go. Please also map the secret folder to a appropriate location.&#13;
+&#13;
+Using this docker container, will ensure after an update the agent still connects.&#13;
+&#13;
+All credits go to the playit.gg team.</Overview>
+  <Category>GameServers: Tools: Network:Proxy</Category>
+  <WebUI>https://playit.gg</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/1rishj/playitgg_unraid_docker/refs/heads/main/playitggicon.png</Icon>
+  <ExtraParams>--restart=unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1766539107</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>Account/registration on playit.gg req.</Requires>
+  <Config Name="Secret Path" Target="/secret" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="SECRET_KEY" Target="SECRET_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"/>
+  <TailscaleStateDir/>
+</Container>
